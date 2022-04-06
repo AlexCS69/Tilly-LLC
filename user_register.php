@@ -1,26 +1,27 @@
 <?php
-if (isset($_POST['submitBtn'])) {
+if (isset($_POST['submitBtn'])) 
+{
 	include("config.php");
 	$sql = "INSERT INTO customer (username, password,gender,phone_no,dob)
 	VALUES ('$_POST[username]','$_POST[password]','$_POST[gender]','$_POST[phone_no]','$_POST[dob]')";
-	if (!mysqli_query($con,$sql)){
+	if (!mysqli_query($con,$sql))
+	{
 		die('Error: ' . mysqli_error($con));
 	}
-	else {
+	else 
+	{
 		echo '<script>alert("Successfully registered!");
 		window.location.href= "homepage.php";
 		</script>';
 	}
-
 	mysqli_close($con);
  }
-
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta name="author" content="Kodinger">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Sign up an account</title>
@@ -29,9 +30,9 @@ if (isset($_POST['submitBtn'])) {
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- Custom Theme files -->
     <link href="login_register/css/my-login.css" rel="stylesheet" media="all" type="text/css">
-
     <!-- web font -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></head>
+
 <body>
 	<!-- main -->
 	<div class="my-login-page">
@@ -45,7 +46,7 @@ if (isset($_POST['submitBtn'])) {
 					<div class="card fat">
 						<div class="card-body">
 						<h4 class="card-title">Sign up an account</h4>
-				            <form action="user_register.php" method="post" class="my-login-validation" novalidate="">
+									<form action="user_register.php" method="post" class="my-login-validation" novalidate="">
 							    <div class="form-group">
 									<label for="username">Username</label>
 									<input id="username" type="text" class="form-control" name="username" required autofocus>

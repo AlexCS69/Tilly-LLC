@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("localhost","root","","cinema");
+$con=mysqli_connect("localhost","root","","tilly");
 
 // Check connection
 if (mysqli_connect_errno())

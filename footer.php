@@ -22,7 +22,6 @@
         <div class="row justify-content-center">
           <div class="col-xl-10">
             <div class="row">
-
               <div class="col-lg-3 col-md-6 footer-links">
                 <h4>Useful Links</h4>
                 <ul>
@@ -54,7 +53,6 @@
                   <strong>Phone:</strong> +1 5589 55488 55<br>
                   <strong>Email:</strong> info@example.com<br>
                 </p>
-
               </div>
 
               <div class="col-lg-3 col-md-6 footer-info">
@@ -68,7 +66,6 @@
                   <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

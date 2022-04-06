@@ -1,22 +1,25 @@
 <?php 
- if (isset($_POST['submitBtn'])) {
-	include("config.php");
-session_start();
+  if (isset($_POST['submitBtn'])) 
+  {
+    include("config.php");
+    session_start();
 
-	if(!isset($_SESSION['login'])){
-		header("Location: user_login.php");
-	}
+    if(!isset($_SESSION['login']))
+    {
+      header("Location: user_login.php");
+    }
 
-	if(isset($_GET['logout'])){
-		session_destroy();
-		unset($_SESSION);
-		header("Location: user_login.php");
-	}
- }
+    if(isset($_GET['logout']))
+    {
+      session_destroy();
+      unset($_SESSION);
+      header("Location: user_login.php");
+	  }
+  }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -43,105 +46,100 @@ session_start();
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
 </head>
 <body>
 
-  <!-- ======= Header ======= -->
-  <?php
-  include "header.php";
-  ?>
- <!-- End Header -->
+<!-- ======= Header ======= -->
+<?php
+include "header.php";
+?>
+<!-- End Header -->
 <!-- ======= Hero Section ======= -->
 <section id="hero">
-    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+    <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-      <div class="carousel-inner" role="listbox">
+    <div class="carousel-inner" role="listbox">
 
-        <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(assets/img/slide/batman.jpg)">
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animated fadeInDown">The Batman </h2>
-              <p class="animated fadeInUp">Synopsis :Robert Pattinson stars as the titular Caped Crusader in this big screen adaptation directed by Matt Reeves, which focuses on a younger Batman.</p>
-              <a href="#about" class="btn-get-started animated fadeInUp scrollto">Booking Now</a>
-            </div>
+      <!-- Slide 1 -->
+      <div class="carousel-item active" style="background-image: url(assets/img/slide/batman.jpg)">
+        <div class="carousel-container">
+          <div class="container">
+            <h2 class="animated fadeInDown">The Batman </h2>
+            <p class="animated fadeInUp">Synopsis :Robert Pattinson stars as the titular Caped Crusader in this big screen adaptation directed by Matt Reeves, which focuses on a younger Batman.</p>
+            <a href="#about" class="btn-get-started animated fadeInUp scrollto">Booking Now</a>
           </div>
         </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/jujuksu.jpg)">
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animated fadeInDown">Lorem Ipsum Dolor</h2>
-              <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/iron.jpg)">
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animated fadeInDown">Sequi ea ut et est quaerat</h2>
-              <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
-            </div>
-          </div>
-        </div>
-
       </div>
 
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
+      <!-- Slide 2 -->
+      <div class="carousel-item" style="background-image: url(assets/img/slide/jujuksu.jpg)">
+        <div class="carousel-container">
+          <div class="container">
+            <h2 class="animated fadeInDown">Lorem Ipsum Dolor</h2>
+            <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+      </div>
 
+    <!-- Slide 3 -->
+    <div class="carousel-item" style="background-image: url(assets/img/slide/iron.jpg)">
+      <div class="carousel-container">
+        <div class="container">
+          <h2 class="animated fadeInDown">Sequi ea ut et est quaerat</h2>
+          <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+          <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
     </div>
+
+    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+    </a>
+  </div>
   </section><!-- End Hero -->
   <!-- ======= About Section ======= -->
   <section id="about" class="about">
-      <div class="container-fluid">
+    <div class="container-fluid">
 
-        <div class="row justify-content-center">
-          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
-            <a href="https://youtu.be/2GMaX2YsncY" class="glightbox play-btn mb-4"></a>
-          </div>
-
-          <div class="col-xl-5 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-            <h3>Who are we?</h3>
-            <p>Since our doors first opened in 2021, we've provided many moviegoers with memories of a memorable day out.</p>
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-film"></i></div>
-              <h4 class="title"><a href="cinema.php">Tilly Indulge</a></h4>
-              <p class="description">Tilly Indulge, Malaysia's top luxury cinema, awaits you, or relax in the wonderful comfort of our Beanieplex venues. Bring your kids for some family-friendly fun, or treat your eyes to the breathtaking clarity of the world's largest cinema LED screen, Samsung ONYX. To top it all off, immerse yourself in the most immersive movie experience on the planet - IMAX®. You have a choice!</p>
-            </div>
-
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="food.html">Food and beverage</a></h4>
-              <p class="description"> We also take pride in the flavor-rich quality of our food and beverages, providing the greatest and FREE popcorn in town as well as an interesting selection of options for guests at any of our 38 sites around the country. </p>
-            </div>
-
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-atom"></i></div>
-              <h4 class="title"><a href="movie.php">Movie types</a></h4>
-              <p class="description">Tilly cinema's varied choice of entertainment ensures there's something for everyone, from the newest blockbusters to intimate dramas, with a splash of documentaries, sports, and culture thrown in for good measure.</p>
-            </div>
-
-          </div>
+      <div class="row justify-content-center">
+        <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+          <a href="https://youtu.be/2GMaX2YsncY" class="glightbox play-btn mb-4"></a>
         </div>
 
+        <div class="col-xl-5 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+          <h3>Who are we?</h3>
+          <p>Since our doors first opened in 2021, we've provided many moviegoers with memories of a memorable day out.</p>
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-film"></i></div>
+            <h4 class="title"><a href="cinema.php">Tilly Indulge</a></h4>
+            <p class="description">Tilly Indulge, Malaysia's top luxury cinema, awaits you, or relax in the wonderful comfort of our Beanieplex venues. Bring your kids for some family-friendly fun, or treat your eyes to the breathtaking clarity of the world's largest cinema LED screen, Samsung ONYX. To top it all off, immerse yourself in the most immersive movie experience on the planet - IMAX®. You have a choice!</p>
+          </div>
+
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-gift"></i></div>
+            <h4 class="title"><a href="food.html">Food and beverage</a></h4>
+            <p class="description"> We also take pride in the flavor-rich quality of our food and beverages, providing the greatest and FREE popcorn in town as well as an interesting selection of options for guests at any of our 38 sites around the country. </p>
+          </div>
+
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-atom"></i></div>
+            <h4 class="title"><a href="movie.php">Movie types</a></h4>
+            <p class="description">Tilly cinema's varied choice of entertainment ensures there's something for everyone, from the newest blockbusters to intimate dramas, with a splash of documentaries, sports, and culture thrown in for good measure.</p>
+          </div>
+
+        </div>
       </div>
+    </div>
     </section><!-- End About Section -->
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
@@ -151,9 +149,9 @@ session_start();
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <?php
+  
+<?php
 include "footer.php";
 ?>
 </body>
-
 </html>
