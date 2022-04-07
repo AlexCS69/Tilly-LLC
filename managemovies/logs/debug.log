@@ -1,0 +1,9 @@
+passhere-The Batman
+passhere-The Batman
+passhere-The Batman
+passhere-The Batman
+passhere-The Batman
+passhere-The Batman
+passhere-The Batman
+insert into producttb(product_name,product_price,product_image,duration,daterelease,category,des) values
+   ('The Batman',20,'C:\xampp\htdocs\Tilly-LLC\images\mv_The Batman.jpg',2 hours,'20220208','1','batman ')
