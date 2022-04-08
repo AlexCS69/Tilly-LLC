@@ -11,8 +11,8 @@
   <link rel="stylesheet" type="text/css" href="assets/css/Material+Icons.css" />
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
   <!-- Material Kit CSS -->
-  <link href="assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
-  <link href="assets/css/black-dashboard.css" rel="stylesheet" />
+  <link href="../assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+  <link href="../assets/css/black-dashboard.css" rel="stylesheet" />
 
 </head>
 
