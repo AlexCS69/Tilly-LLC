@@ -1,4 +1,4 @@
- <?php
+<?php
 session_start();
 include("../includes/dbhandler.php");
 include("../includes/functions.php");
@@ -35,7 +35,6 @@ if(isset($_POST['btn_save']))
    mysqli_close($conn);
 }
 
-
 ?>
       <!-- End Navbar -->
       <div class="content">
@@ -47,7 +46,7 @@ if(isset($_POST['btn_save']))
                   <h4 class="card-title">Add Movie</h4>
                 </div>
                 <div class="card-body">
-                  <form action="additem.php" method="post" name="form" enctype="multipart/form-data">
+                  <form action="addmovie.php" method="post" name="form" enctype="multipart/form-data">
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group bmd-form-group">
@@ -68,21 +67,21 @@ if(isset($_POST['btn_save']))
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group bmd-form-group">
-                          <label class="bmd-label-floating">Image</label>
+                          <label class="bmd-label-floating">Description</label>
                           <input type="text" name="product_image" id="product_image" class="form-control" required>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group bmd-form-group">
-                          <label class="bmd-label-floating">Movie Duration (minutes)</label>
-                          <input type="text" id="duration" name="duration" class="form-control" required>
+                          <label class="bmd-label-floating">Category</label>
+                          <input type="text" id="category" name="category" class="form-control" required>
                         </div>
                       </div>
                     </div>
                     <div class="row">
                        <div class="col-md-12">
                            <div class="form-group bmd-form-group">
-                             <label class="bmd-label-floating">Date Release</label>
+                             <label class="bmd-label-floating">Release Date</label>
                              <input type="text" id="daterelease" name="daterelease" class="form-control" required>
                            </div>
                        </div>
@@ -91,14 +90,14 @@ if(isset($_POST['btn_save']))
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group bmd-form-group">
-                          <label class="bmd-label-floating">Movie Category</label>
-                          <input type="text" name="category" id="category" class="form-control" required>
+                          <label class="bmd-label-floating">Movie Duration (minutes)</label>
+                          <input type="text" name="duration" id="duration" class="form-control" required>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group bmd-form-group">
-                          <label class="bmd-label-floating">Movie Description</label>
-                          <input type="text" id="des" name="des" class="form-control" required>
+                          <label class="bmd-label-floating">Image</label>
+                          <input type="text" id="product_image" name="product_image" class="form-control" required>
                         </div>
                       </div>
                     </div>
