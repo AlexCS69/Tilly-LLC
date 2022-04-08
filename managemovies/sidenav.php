@@ -32,30 +32,15 @@
       <div class="sidebar-wrapper ps-container ps-theme-default" data-ps-id="3a8db1f4-24d8-4dbf-85c9-4f5215c1b29a">
         <ul class="nav">
           <li class="nav-item active">
-            <a class="nav-link" href="index.php">
+            <a class="nav-link" href="homepage.php">
               <i class="material-icons">dashboard</i>
               <p>HOME</p>
             </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="manageuser.php">
-              <i class="material-icons">edit_user</i>
-              <p>Manage User</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="adduser.php">
-               <!-- <a class="nav-link" href="../../pets.test/sign_up.php">  -->
-              <i class="material-icons">person</i>
-              <p>Add User</p>
-            </a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="movielist.php">
               <i class="material-icons">list</i>
               <p>Movie List</p>
             </a>
-
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="addmovie.php">
@@ -63,26 +48,25 @@
               <p>Add Movie</p>
             </a>
           </li>
-          <!-- <li class="nav-item ">
-            <a class="nav-link" href="orderslist.php">
-              <i class="material-icons">library_books</i>
-              <p>Orders</p>
-            </a>
-          </li> -->
-
-
+          </li>
           <li class="nav-item ">
-            <a class="nav-link" href="index.php">
+            <a class="nav-link" href="">
+              <i class="material-icons">list</i>
+              <p>Feedback List</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="">
+              <i class="material-icons">add</i>
+              <p>Manage Receipt</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="">
               <i class="material-icons">logout</i>
               <p>Logout</p>
             </a>
           </li>
-          <!-- <li class="nav-item active-pro ">
-                <a class="nav-link" href="./upgrade.html">
-                    <i class="material-icons">unarchive</i>
-                    <p>Upgrade to PRO</p>
-                </a>
-            </li> -->
         </ul>
       </div>
     </div>
